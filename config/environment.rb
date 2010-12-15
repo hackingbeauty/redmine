@@ -51,7 +51,7 @@ Rails::Initializer.run do |config|
   config.action_mailer.perform_deliveries = false
 
   config.gem 'rubytree', :lib => 'tree'
-  
+  config.action_controller.session = { :key => "_myapp_session", :secret => "xxx8a3dddc66bd1067e0e1ed3fc49008462deasdfasdf" } 
   # Load any local configuration that is kept out of source control
   # (e.g. gems, patches).
   if File.exists?(File.join(File.dirname(__FILE__), 'additional_environment.rb'))
